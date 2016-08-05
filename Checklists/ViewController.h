@@ -6,10 +6,12 @@
 //  Copyright © 2016年 梅晴光. All rights reserved.
 //
 
+
+
 #import <UIKit/UIKit.h>
+#import "ItemDetailViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UITableViewController<ItemDetailViewControllerDelegate>
+- (IBAction)addItem:(id)sender;
 
 @end
-

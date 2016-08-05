@@ -15,6 +15,8 @@
 		EF26499C1D4DE0F3004A637B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF26499A1D4DE0F3004A637B /* LaunchScreen.storyboard */; };
 		EF2649A71D4DE0F3004A637B /* ChecklistsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2649A61D4DE0F3004A637B /* ChecklistsTests.m */; };
 		EF2649B21D4DE0F3004A637B /* ChecklistsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2649B11D4DE0F3004A637B /* ChecklistsUITests.m */; };
+		EF5093351D5373960004E79A /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5093341D5373960004E79A /* ItemDetailViewController.m */; };
+		EFD7E3EA1D4E01AF0005A41A /* ChecklistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7E3E91D4E01AF0005A41A /* ChecklistItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		EF2649AD1D4DE0F3004A637B /* ChecklistsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChecklistsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2649B11D4DE0F3004A637B /* ChecklistsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChecklistsUITests.m; sourceTree = "<group>"; };
 		EF2649B31D4DE0F3004A637B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5093331D5373960004E79A /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		EF5093341D5373960004E79A /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
+		EFD7E3E81D4E01AF0005A41A /* ChecklistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistItem.h; sourceTree = "<group>"; };
+		EFD7E3E91D4E01AF0005A41A /* ChecklistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				EF26499A1D4DE0F3004A637B /* LaunchScreen.storyboard */,
 				EF26499D1D4DE0F3004A637B /* Info.plist */,
 				EF26498C1D4DE0F3004A637B /* Supporting Files */,
+				EFD7E3E81D4E01AF0005A41A /* ChecklistItem.h */,
+				EFD7E3E91D4E01AF0005A41A /* ChecklistItem.m */,
+				EF5093331D5373960004E79A /* ItemDetailViewController.h */,
+				EF5093341D5373960004E79A /* ItemDetailViewController.m */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -276,6 +286,8 @@
 				EF2649941D4DE0F3004A637B /* ViewController.m in Sources */,
 				EF2649911D4DE0F3004A637B /* AppDelegate.m in Sources */,
 				EF26498E1D4DE0F3004A637B /* main.m in Sources */,
+				EF5093351D5373960004E79A /* ItemDetailViewController.m in Sources */,
+				EFD7E3EA1D4E01AF0005A41A /* ChecklistItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +513,7 @@
 				EF2649B81D4DE0F3004A637B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF2649B91D4DE0F3004A637B /* Build configuration list for PBXNativeTarget "ChecklistsTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +522,7 @@
 				EF2649BB1D4DE0F3004A637B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF2649BC1D4DE0F3004A637B /* Build configuration list for PBXNativeTarget "ChecklistsUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +531,7 @@
 				EF2649BE1D4DE0F3004A637B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
