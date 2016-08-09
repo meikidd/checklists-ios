@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     if(self.itemToEdit != nil){
         self.title = @"Edit Item";
         self.textField.text = self.itemToEdit.text;

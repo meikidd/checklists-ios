@@ -16,15 +16,17 @@
 -(void)itemDetailViewControllerDidCancel:(ItemDetailViewController*)controller;
 -(void)itemDetailViewController:(ItemDetailViewController*)controller didFinishAddingItem:(ChecklistItem*)item;
 -(void)itemDetailViewController:(ItemDetailViewController*)controller didFinishEditingItem:(ChecklistItem*)item;
+
 @end
 
 @interface ItemDetailViewController : UITableViewController<UITextFieldDelegate>
 
-    @property(nonatomic,strong) ChecklistItem *itemToEdit;
-    @property(nonatomic,weak) id <ItemDetailViewControllerDelegate> delegate;
-    @property (weak, nonatomic) IBOutlet UIBarButtonItem *doneBarButton;
-    @property (weak, nonatomic) IBOutlet UITextField *textField;
-    - (IBAction)cancel:(id)sender;
-    - (IBAction)done:(id)sender;
+@property(nonatomic,strong) ChecklistItem *itemToEdit;
+@property(nonatomic,weak) id <ItemDetailViewControllerDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneBarButton;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+- (IBAction)cancel:(id)sender;
+- (IBAction)done:(id)sender;
 
 @end
