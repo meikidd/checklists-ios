@@ -19,6 +19,7 @@
 		EF50933B1D548A810004E79A /* AllListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF50933A1D548A810004E79A /* AllListsViewController.m */; };
 		EF50933E1D54986E0004E79A /* Checklist.m in Sources */ = {isa = PBXBuildFile; fileRef = EF50933D1D54986E0004E79A /* Checklist.m */; };
 		EF5093411D582C650004E79A /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5093401D582C650004E79A /* ListDetailViewController.m */; };
+		EF5093451D61E2EF0004E79A /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5093441D61E2EF0004E79A /* DataModel.m */; };
 		EFD7E3EA1D4E01AF0005A41A /* ChecklistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7E3E91D4E01AF0005A41A /* ChecklistItem.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		EF50933D1D54986E0004E79A /* Checklist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Checklist.m; sourceTree = "<group>"; };
 		EF50933F1D582C650004E79A /* ListDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListDetailViewController.h; sourceTree = "<group>"; };
 		EF5093401D582C650004E79A /* ListDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListDetailViewController.m; sourceTree = "<group>"; };
+		EF5093431D61E2EF0004E79A /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		EF5093441D61E2EF0004E79A /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 		EFD7E3E81D4E01AF0005A41A /* ChecklistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistItem.h; sourceTree = "<group>"; };
 		EFD7E3E91D4E01AF0005A41A /* ChecklistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +138,8 @@
 				EF50933D1D54986E0004E79A /* Checklist.m */,
 				EF50933F1D582C650004E79A /* ListDetailViewController.h */,
 				EF5093401D582C650004E79A /* ListDetailViewController.m */,
+				EF5093431D61E2EF0004E79A /* DataModel.h */,
+				EF5093441D61E2EF0004E79A /* DataModel.m */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			files = (
 				EF5093411D582C650004E79A /* ListDetailViewController.m in Sources */,
 				EF2649941D4DE0F3004A637B /* ChecklistViewController.m in Sources */,
+				EF5093451D61E2EF0004E79A /* DataModel.m in Sources */,
 				EF2649911D4DE0F3004A637B /* AppDelegate.m in Sources */,
 				EF50933B1D548A810004E79A /* AllListsViewController.m in Sources */,
 				EF26498E1D4DE0F3004A637B /* main.m in Sources */,
