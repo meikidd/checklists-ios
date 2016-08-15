@@ -20,7 +20,7 @@
 -(id)initWithCoder:(NSCoder *)aDecoder{
     if((self = [super init])){
         self.name = [aDecoder decodeObjectForKey:@"Name"];
-        self.name = [aDecoder decodeObjectForKey:@"Items"];
+        self.items = [aDecoder decodeObjectForKey:@"Items"];
     }
     return self;
 }
