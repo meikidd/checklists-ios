@@ -11,6 +11,8 @@
 @interface Checklist : NSObject<NSCoding>
 
 -(int)countUncheckedItems;
+
+@property(nonatomic,copy)NSString *iconName;
 @property(nonatomic,copy)NSString *name;
 @property(nonatomic,strong)NSMutableArray *items;
 

@@ -39,6 +39,7 @@
 
 -(void)loadChecklists{
     NSString *path = [self dataFilePath];
+    NSLog(@"debug: path=%@", path);
     if([[NSFileManager defaultManager]fileExistsAtPath:path]){
         NSData *data =[[NSData alloc]initWithContentsOfFile:path];
         NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc]initForReadingWithData:data];
@@ -67,5 +68,12 @@
         [self.lists addObject:checklist];
         [self setIndexOfSelectedChecklist:0];
         [[NSUserDefaults standardUserDefaults]setBool:NO forKey:@"FirstTime"];
-    } }
+    }
+}
+
+
+
+-(void)sortChecklists{
+    [self.lists sortUsingSelector:@selector(compare:)];
+}
 @end
