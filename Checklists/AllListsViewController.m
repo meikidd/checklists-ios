@@ -21,6 +21,16 @@
     [super viewDidLoad];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.navigationController.delegate = self;
+    NSInteger index = [self.dataModel indexOfSelectedChecklist];
+    if(index >=0 && index < [self.dataModel.lists count]){
+        Checklist *checklist = self.dataModel.lists[index];
+        [self performSegueWithIdentifier:@"ShowChecklist" sender:checklist];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -42,6 +52,9 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    [self.dataModel setIndexOfSelectedChecklist:indexPath.row];
+
     Checklist *checklist = self.dataModel.lists[indexPath.row];
     [self performSegueWithIdentifier:@"ShowChecklist" sender:checklist];
 }
@@ -91,5 +104,10 @@
     controller.checklistToEdit = checklist;
     [self presentViewController:navigationController animated:YES completion:nil];
     
+}
+-(void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if(viewController ==self){
+        [self.dataModel setIndexOfSelectedChecklist:-1];
+    }
 }
 @end
