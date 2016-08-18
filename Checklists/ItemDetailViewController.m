@@ -15,14 +15,24 @@
 
 @implementation ItemDetailViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    if(self.itemToEdit != nil){
-        self.title = @"Edit Item";
-        self.textField.text = self.itemToEdit.text;
-        self.doneBarButton.enabled = YES;
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        // Custom initialization
     }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+  [super viewDidLoad];
+
+  if (self.itemToEdit != nil) {
+    self.title = @"Edit Item";
+    self.textField.text = self.itemToEdit.text;
+    self.doneBarButton.enabled = YES;
+  }
 }
 
 - (void)didReceiveMemoryWarning {
